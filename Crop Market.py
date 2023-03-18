@@ -1,7 +1,6 @@
 import requests as req
 import json
 import math
-import tkinter as tk
 from time import sleep
 from colorama import Fore, Back, Style
 
