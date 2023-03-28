@@ -4,8 +4,8 @@ from datetime import datetime
 
 
 with open('index.md', 'w') as index:
-    index.write("last code update march 24th\n")
-    index.write(f"Last BZ API Call {datetime.now():%A, %B %d %H:%M:%S} UTC \n")
+    index.write("last code update march 24th \n")
+    index.write(f"Last BZ API Call {datetime.now():%A, %B %d %H:%M:%S} UTC \n\n")
 
     url = "https://api.hypixel.net/skyblock/bazaar"
 
@@ -124,9 +124,9 @@ with open('index.md', 'w') as index:
 
     #display module
     def display(displayname, crop, cph):
-        index.write(f'{displayname} \n')
-        index.write(f'     Sell Price: {crop:,.0f} \n')
-        index.write(f'     Coins per Hour: {cph:,.0f} \n\n')
+        index.write(f'{displayname} \n\n')
+        index.write(f'     Sell Price: {crop:,.0f} \n\n')
+        index.write(f'     Coins per Hour: {cph:,.0f} \n\n\n')
         
 
     #THERE WAS A BETTER WAY TO DO THIS GOOD JOB ME
